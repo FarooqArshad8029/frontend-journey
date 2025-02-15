@@ -1,0 +1,785 @@
+@font-face {
+    font-family: "BBC Reith Sans";
+    src: url("../assets/fonts/BBCReithSans.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "BBC Reith Sans ";
+    src: url("../assets/fonts/BBCReithSans_Md.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "BBC Reith Sans";
+    src: url("../assets/fonts/BBCReithSansBold.ttf") format("truetype");
+    font-weight:bold;
+}
+@font-face {
+    font-family: "BBC Reith Serif";
+    src: url("../assets/fonts/BBCReithSerif_Md.ttf") format("truetype");
+    font-weight:700;
+}
+@font-face {
+    font-family: "BBC Reith Serif";
+    src: url("../assets/fonts/BBCReithSerif_Md.ttf") format("truetype");
+    font-weight:500;
+}
+@font-face {
+    font-family: "BBC Reith Serif";
+    src: url("../assets/fonts/BBCReithSerif_Rg.ttf") format("truetype");
+    font-weight:400;
+}
+@font-face {
+    font-family: "BBC Reith Serif";
+    src: url("../assets/fonts/BBCReithSerif_Rg.ttf") format("truetype");
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../assets/fonts/Helvetica.ttf") format("truetype");
+    font-weight: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "BBC Reith Sans", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+
+}
+
+
+/* header */
+
+
+header{
+    padding: 19px  22px;
+    height: 65px;
+    width: 100%;
+    min-width: 300px;
+    background-color: white;
+
+    text-align: center; 
+    vertical-align: middle;    
+    border-bottom: 1px solid rgb(230, 232, 234);
+    position:fixed;
+    z-index: 1;
+}
+header .menu{
+    float: left;
+}
+header .menu > i{
+    cursor: pointer;
+}
+header .menu > .responsive-menu{
+    font-size: 22px;
+}
+header .menu > .search-icon{
+    font-size: 20px;
+    margin: 0px 26px;
+}
+/* BBC Logo Code */
+header .logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+}
+
+.logo > span{
+
+    /* font-family: "BBC Reith Sans Bold"; */
+    /* font-weight: bold; */
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    margin: 0px 2px;
+    cursor: pointer;
+    line-height: 36px;
+}
+header .mode{
+    float: right;
+    position: relative;
+    top: -6px;
+}
+header .mode > button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "BBC Reith Sans Medium";
+    font-weight: 500;
+}
+header .mode > button:hover{
+    background-color:#3A3C3E;
+    color: white;
+}
+header .mode > .register{
+    background-color: black;
+    color: white;
+    padding: 9px 15px 7px 15px;
+}
+header .mode > .sign-in{
+    color: black;
+    margin-left: 13px;
+    padding: 9px 8px 7px 15px;
+}
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* navbar */
+
+
+.navbar{
+    text-align: center;
+    padding: 12px 10px 8px 10px;
+    border-bottom: 1px solid rgb(230, 232, 234);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    z-index: 1;
+}
+.navbar .active::after{
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;    
+}
+.navbar .line{
+    border-left: 1px solid rgb(230, 232, 234) ;
+}
+.navbar > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 36;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 16px 6px 13px 6px;
+    font-family: "BBC Reith Sans";
+    font-weight: normal;
+}
+.navbar > a:hover{
+    background-color: #E6E8EA;
+}
+
+
+/* Section 1 : main*/
+
+
+.section-1{
+    max-width: 1280px;
+    padding: 156px 16px 20px 16px;
+    margin: 0px auto ;
+    display: flex;
+    gap: 10px;
+}
+.section-1 .part-a .col-1 ,.section-1 .part-a .col-2 ,.section-1 .part-b .col-3{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.section-1 .part-a{
+    width: 75%;
+    gap: 10px;
+    display: flex;
+}
+.section-1 .part-b{
+    width: 25%;
+}
+.section-1 .part-a  .col-1{
+    width:30%;
+}
+.section-1 .part-a  .col-2 {
+    width:70%;
+}
+.section-1 .part-a  .col-1 .col-1-link:hover img {
+    opacity: 0.8;
+}
+.section-1 .part-a  .col-1 .col-1-link ,.section-1 .part-a  .col-2 .col-2-link ,.section-1 .part-b  .col-3 .col-3-link{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgb(230, 232, 234);
+}
+.section-1 .part-a  .col-1 .col-1-link:last-child ,.section-1 .part-a  .col-2 .col-2-link:last-child ,.section-1 .part-b  .col-3 .col-3-link:last-child{
+    border-bottom: none;
+}
+.section-1 .part-a  .col-1 .col-1-link:hover .title , .section-1 .part-b  .col-3 .col-3-link:hover >.title{
+    text-decoration: underline;
+}
+.section-1 .part-a .col-2:hover img,
+.section-1 .part-a .col-2:hover .title {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.section-1 .part-a  .col-1 .col-1-link  .title , .section-1 .part-a  .col-2 .col-2-link > .title  , .section-1 .part-b  .col-3 .col-3-link > .title{
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.36px;
+    margin:6px 0px;
+    font-family: "BBC Reith Sans Medium";
+    font-weight: 500;
+}
+.section-1 .part-a  .col-1 .col-1-link  .description , .section-1 .part-a  .col-2 .col-2-link > .description  , .section-1 .part-b  .col-3 .col-3-link > .description{
+    font-size: 14px;
+    line-height: 18px;
+    color: #202224;
+    font-family: "BBC Reith Serif", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+}
+.section-1 .part-a  .col-1 .col-1-link  .detail , .section-1 .part-a  .col-2 .col-2-link > .detail  , .section-1 .part-b  .col-3 .col-3-link > .detail{
+    width: 50%;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.12px;
+    padding: 27px 0px 16px 0px;
+    color: #6c6d6d;
+    position: relative;
+}
+.section-1 .part-a  .col-1 .col-1-link .detail > .seprator , .section-1 .part-a  .col-2 .col-2-link .detail > .seprator  , .section-1 .part-b  .col-3 .col-3-link .detail > .seprator{
+    left: 51px;
+    position: absolute;
+    top: calc(43% - 0px);
+    width: 1.5px;
+    height: 16px;
+    background-color: #7e7f80;
+    margin: 0px 7px;
+}
+.section-1 .part-a  .col-1 .col-1-link .detail > .area , .section-1 .part-a  .col-2 .col-2-link .detail > .area  , .section-1 .part-b  .col-3 .col-3-link .detail > .area{
+    margin-left: 15px;
+}
+.section-1 .part-a  .col-2 .col-2-link > .title  {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.56px;
+    font-family: "BBC Reith Sans Medium";
+    font-weight: 500;
+}
+.section-1 .part-a  .col-2 .col-2-link > .description  {
+    font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px 0px;
+    line-height: 18px;
+}
+
+
+
+
+/* section seprator */
+
+
+.section-seprator{
+    margin: 5px 15px;
+    background-color: black;
+    height: 2px;
+}
+
+
+/* section -2  : post's*/
+
+
+.section-2{
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 48px 16px 20px 16px;
+}
+ .post{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.post-card{
+    width: 49.4%;
+    border-bottom: 1px solid rgb(230, 232, 234);
+}
+.post-link , .news-link , .must-watch-viedo-link  ,.travel-news-link , .business-news-link ,.discover-more-link ,.short-news-link ,.video-news-link {
+    text-decoration: none;
+    color: black;
+}
+.post-link:hover > img , .must-watch-viedo-link:hover > video , .travel-news-link:hover img , .business-news-link:hover img ,.discover-more-link:hover img ,.short-news-link:hover > img ,.video-news-link:hover video{ 
+    opacity: 0.8;
+}
+.post-link:hover > .post-title  , .news-link:hover  >.news-title , .must-watch-viedo-link:hover > .video-title , .travel-news-link:hover .travel-news-title , .business-news-link:hover .business-news-title ,.discover-more-link:hover > .discover-more-title , .short-news-link:hover > .news-title ,.video-news-link:hover .video-news-title {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.post-title , .news-title  , .video-title ,.travel-news-title , .business-news-title , .discover-more-title  ,.video-news-title{
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.36px;
+    margin:6px 0px;
+    font-family: "BBC Reith Sans Medium";
+    font-weight: 500;
+}
+.post-description , .video-description ,.travel-news-description ,.business-news-description ,.discover-more-description ,.video-news-description{
+    font-size: 14px;
+    line-height: 18px;
+    color: #202224;
+    font-family: "BBC Reith Serif", "Helvetica", Arial, sans-serif;
+    font-weight: normal;
+}
+.post-detail , .news-detail ,.video-detail{
+    width: max-content;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.12px;
+    padding: 27px 0px 16px 0px;
+    color: #6c6d6d;
+    position: relative;
+}
+.post-detail > .seprator , .news-detail  >.seprator ,.video-detail  > .seprator {
+    left: 51px;
+    position: absolute;
+    top: calc(43% - 0px);
+    width: 1.5px;
+    height: 16px;
+    background-color: #7e7f80;
+    margin: 0px 7px;
+}
+.post-detail > .area  ,.news-detail  > .area , .video-detail  > .area  {
+    margin-left: 15px;
+}
+
+
+/* Section 3:  More news Links */
+
+
+.more-news-main-link > a:hover , .travel-news-main-link > a:hover  ,.business-news-main-link >a:hover ,.short-news-main-link> a:hover ,.video-news-main-link > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.more-news{
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 10px 16px 35px 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.news-link{
+    width: 20%;
+}
+
+
+/* Section 4 & 7: Miust watch section & discover  More */
+
+
+.section-4 , .section-7{
+    padding: 24px 16px 20px 16px;
+    background-color: #141618;
+    color: white;
+    height: min-content;
+}
+.must-watch-main-link , .discover-more-main-link{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.must-watch-btns > button , .discover-more-btns>button{ 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 28px;
+}
+.must-watch-btns > button:hover , .discover-more-btns>button:hover{
+    background-color: #545658;
+}
+.must-watch , .discover-more{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.must-watch-viedo-link , .discover-more-link {
+    width: 24%;
+    color: #E6E8EA;
+    border-bottom: 1px solid rgb(230, 232, 234);
+}
+
+
+
+/* Section 5-6: travel News  & Business*/
+
+
+.section-5 , .section-6{
+    padding: 24px 16px 20px 16px;
+    max-width: 1280px;
+    margin: 0px auto;
+    height: min-content;    
+}
+.travel-news-link , .business-news-link {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.travel-news-image , .business-news-image{
+    width: 66.7%;
+}
+.travel-news-image-data ,.business-news-image-data{
+    width: 32%;
+}
+.travel-news-title ,.business-news-title ,.video-news-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.56px;
+}
+.travel-news-btn , .business-news-btn {
+    background: transparent;
+    border: 2px solid black;
+    padding: 8px 15px;
+    margin-top: 20px;
+}
+.travel-news-btn:hover , .business-news-btn:hover {
+    background-color: #3A3C3E;
+    color: white;
+}
+
+
+/* Section-8: short- news section */
+
+
+.section-8 {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 10px 16px 35px 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.section-8 > div{
+    width: 25%;
+    border-top: 2px solid black;
+    border-top-width: 80%;
+}
+.more-short-news  >  .short-news-link{
+    /* check */
+    /* border-bottom: 1px solid rgb(230, 232, 234); */
+}
+.short-news-main-link h2{
+    font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.more-short-news  .short-news-link > h2{
+    font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+}
+.more-short-news .extended-link > .news-description{
+    font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+/* Section-9 */
+
+
+.section-9 {
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 10px 16px 20px 16px;
+    background-color: #141618;
+}
+.video-news-link{
+    display: flex;
+}
+.video-news{
+    width: 66.6%;
+}
+.video-news-data{
+    width: 33%;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.video-news-title{
+    font-family: "BBC Reith Serif", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+.video-news-btn{
+    display: inline-block;
+    width: max-content;
+    color: #D2D4D6;
+    border: 2px solid #D2D4D6;
+    background: transparent;
+    padding: 8px 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+.video-news-btn:hover{
+    background-color: #D2D4D6;
+    color: black;
+
+}
+
+
+/* footer*/
+
+
+footer{
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 18px 16px 20px 16px;
+    border-top: 1px solid black;
+}
+.footer-links {
+    margin: 25px 0px;
+}
+.footer-links > a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px 6px;
+    font-family: "BBC Reith serif" ;
+    font-weight: 700;
+}
+.footer-links a:first-child {
+    margin-left: 0px;
+}
+.footer-links >a:hover , .terms-links > a:hover{
+    text-decoration: underline;
+}
+.language > button{
+    background-color: #E6E8EA;
+    border: none;
+    padding: 12px 20px 12px 10px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: "BBC Reith serif" ;
+    font-weight: 500;
+}
+.footer-seprator{
+    height: 1px ;
+    background-color: #E6E8EA;
+    margin: 10px 0px;
+}
+.social-media > div , .social-media >p{
+    display: inline-block;
+}
+.social-media{
+    margin: 15px 0px;
+}
+.social-media-icons{
+    margin-left:20px;
+}
+.social-media-icons > i{
+    margin: 0px 7px;
+    padding: 5px;
+}
+.social-media-icons  i:hover{
+    /* border: 1px solid rgb(51, 50, 50); */
+    outline: 1px solid rgb(51, 50, 50); 
+    cursor: pointer;
+
+}
+.terms-links{
+    margin: 15px 0px;
+}
+.terms-links > a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 6px;
+    color: #30303e;
+    font-family: "BBC Reith Serif" ;
+}
+.terms-links a:first-child{
+    margin-left: 0px;
+}
+.copyright{
+  
+    font-size: 12px;
+    line-height: 16px;
+    margin: 15px 0px 20px 0px;
+    color: #262630e8;
+}
+.copyright p{
+    font-family: "BBC Reith Serif" ;
+}
+.copyright  a{
+    color: black;
+    cursor:pointer;
+    font-size: 13px;
+}
+
+
+/* media Quries */
+
+@media screen and (max-width: 1000px) {
+    .navbar{
+        display: none;
+    }
+    .section-1{
+        display: block;
+    }   
+
+    .section-1 .part-a ,.section-1 .part-b{
+        width: 100%;
+    }
+    
+    .section-1 .part-b .col-3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section-1 .part-b .col-3 >.col-3-link{
+        width: 48%;
+    }
+      /* section-5&6 */
+      .travel-news-link  {
+        flex-direction: column;
+    }    
+    .business-news-link{
+        flex-direction: column-reverse;
+    }
+    .travel-news-image , .business-news-image{
+        width: 100%;
+
+    }
+    .travel-news-image-data ,.business-news-image-data{
+        width: 100%;
+    }
+
+     /* section-8 */
+     .section-8{
+        flex-wrap: wrap;
+     }
+     .section-8 > div{
+        width: 48%;
+    }
+
+    /* seection-9 */
+    .video-news-link{
+        flex-direction: column;
+    }
+    .video-news{
+        width: 100%;
+    }
+    .video-news-data{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 750px) {
+.more-news{
+    flex-wrap: wrap;
+}
+    .news-link{
+        width: 47%;
+    }
+    .must-watch-viedo-link  ,.discover-more-link {
+        width: 32%;
+        }
+
+}
+@media screen and (max-width: 600px) {
+
+    /* header */
+    header .mode{
+        display: none;
+    }
+
+
+    /* section-1 */
+
+    .section-1 .part-a {
+        /* display: block; */
+        flex-direction: column-reverse;
+    }
+    .section-1 .part-a .col-1 {
+    width: 100%;
+    }
+    .section-1 .part-a  .col-2{
+    width: 100%;
+    }
+    .section-1 .part-a .col-1 .col-1-link .description {
+    display: none;
+    }
+    .section-1 .part-a .col-1 .col-1-link .detail {
+    padding: 8px 0px;
+    }
+    .section-1 .part-a .col-1 .col-1-link .detail .seprator{
+    top: calc(21% - 0px) ;
+    }
+    .section-1 .part-a .col-1 .col-1-link .left {
+        float: left;
+        width:25%;
+    }
+    .section-1 .part-a .col-1 .col-1-link .right {
+    float: right;
+    width: 73%;
+    }
+    .section-1 .part-a .col-1 .col-1-link::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .section-1 .part-b .col-3 >.col-3-link{
+        width: 100%;
+    }
+
+    /* section-2 */
+
+    .post{
+        flex-direction: column;
+    }
+    .post-card{
+        width: 100%;
+    }
+    /* section-3 */
+    .news-link{
+        width: 100%;
+    }
+    /* section-4 &7 */
+    .must-watch-viedo-link ,.discover-more-link {
+      width: 48%;
+    }
+    /* section-8 */
+    .section-8 > div{
+        width: 100%;
+    }
+    /* footer */
+    .footer-links > a {
+        display: block ;
+        margin: 8px 0px;
+    }   
+    .social-media > div , .social-media >p{
+       display: block;
+    }
+    .social-media-icons {
+      margin-left: 0px;
+    }
+    .social-media-icons > i:first-child{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+}
+
