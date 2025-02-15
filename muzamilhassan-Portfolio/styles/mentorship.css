@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: "Chillax";
+    src: url("../fonts/Chillax-Bold_0.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url("../fonts/Chillax-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url("../fonts/Chillax-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJakartaSans-Medium.ttf") format("opentype");
+    font-weight: 500;
+}
+
+body{
+    font-family: "chillax" "Plus Jakarta Sans" system-ui sans-serif ;
+    font-weight: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-mentorships{
+    text-align: center;
+}
+
+
+
+/* mentorship-intro */
+
+
+.mentorship-intro {
+    text-align: center  ;
+    font-family: "Chillax Semibold", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600;
+    padding-top: 80px;
+}
+.mentorship-intro  .first, .call-me  .first   {
+    color: #25362A;
+    border: 3px solid #25362A;
+    padding: 8px 27.3px;
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 105%;
+    /* width: max-content; */
+    border-radius: 30px;
+    display: inline-block;
+    /* margin-bottom: 19.4px; */
+    margin: 0px auto 19.4px auto;
+
+}
+.mentorship-intro .heading, .call-me .heading{
+    color: #25362A;
+    font-size: 65px;
+    letter-spacing: -3px;
+    line-height: 110%;
+    margin-bottom: 20.4px;
+}
+.mentorship-intro >img, .call-me >img{
+    max-width: 400px;
+    width: 100%;
+    height: 17px;
+    object-fit: cover;
+    margin-bottom: 33.9px;
+}
+.mentorship-intro .mentorship-detail, .call-me .call-detail {
+    color: #4A4A4A;
+    max-width: 800px;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 160%;
+    margin: 0px auto;
+}
+.mentorship-intro .mentorship-detail >strong, .call-me .call-detail >strong{
+    word-spacing: 1.1px;
+}
+/* .mentorship-intro .mentorship-detail >span, .call-me .call-detail >span{
+    font-weight: bold;
+} */
+/* muzamil intro card */
+.mentorship-intro .card , .call-me .call-card .card{
+    max-width: 390px;
+    border-radius: 24px;
+    padding: 31.6px 32px 31px 32px;
+    text-align: left;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    font-weight: 500;
+    border: 1px solid #325E3C;
+    margin: 40.4px auto 0px auto;
+}
+.mentorship-intro .card >img, .call-me .call-card .card >img{
+    width: 100%;
+    height: 178px;
+    border-radius: 12px;
+    margin-bottom:27.7px ;
+    object-fit: cover;
+    object-position: center center;
+}
+.mentorship-intro .card >h3, .call-me .call-card .card >h3{
+    color: #3D5D3F;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+    font-family: "Chillax Semibold", "Chillax Semibold Placeholder", sans-serif;
+    font-size: bold;
+    margin-bottom: 16px ;
+}
+.mentorship-intro .card >p, .call-me .call-card .card >p{
+    color: #404040;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    line-height: 160%;
+    margin-bottom: 29px;
+}
+.mentorship-intro .card >button, .call-me .call-card .card >button{
+    background-color: #325E3C;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    padding: 15px 30px;
+    color: white;
+    font-family: "Chillax Semibold", "Chillax Semibold Placeholder", sans-serif;
+    font-size: bold;
+    font-size: 18px;
+}
+div.or{
+    color:#2A3C2E;
+    font-size: 50px;
+    margin: 63px auto 65px auto;
+    font-family: "Chillax", "Chillax Placeholder", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* Schediual call with Muzamil */
+
+
+.call-me{
+    text-align: center;
+    font-family: "Chillax Semibold", "Chillax Semibold Placeholder", sans-serif;
+    font-size: bold;
+}
+.call-me  .first  {
+    padding: 8px 27px;
+    margin-bottom: 15.5px;
+}
+.call-me .heading{
+    margin-bottom: 14.7px;
+}
+.call-me >img{
+    margin-bottom: 58px;
+}
+
+/* muzamil call card */
+.call-me .call-card {
+    max-width: 1280px;
+    padding: 0px 32px 11px;
+    margin: 0px auto;
+}
+
+.call-me .call-card .card{
+    padding: 31px;
+    border: 1.30px solid #325E3C;
+    margin: 40px auto;
+    display: inline-block;
+    width: 38%;
+}
+
+/* Media Queries */
+
+
+
+@media screen and (max-width:1199px){
+    .call-me .call-card .card{
+        display: block;
+        width: 100%;
+    }
+    .call-me .call-card .rmv-left-margin{
+        margin: 24px auto !important;
+}
+}
+
+@media screen and (max-width:1000px){
+    .mentorship-intro .heading ,.call-me .heading{
+        font-size: 60px;
+        }
+
+}
+@media screen and (max-width:750px){
+    .mentorship-intro .first ,.call-me .first{
+    font-size: 22px;
+    }
+    .mentorship-intro .heading ,.call-me .heading{
+        font-size: 47px;
+        }
+    .mentorship-intro .mentorship-detail ,.call-me .call-detail{
+        padding: 10px 60px;
+        font-size: 19px;
+}
+}
+
+@media screen and (max-width:450px){
+    .mentorship-intro .heading ,.call-me .heading{
+        font-size: 42px;
+
+    }
+}
+@media screen and (max-width:400px){
+
+    .mentorship-intro .card {
+        width: 80%;
+    }
+
+        div.or{
+            font-size: 30px;
+            margin: 30px auto;
+        }
+    .mentorship-intro .first ,.call-me .first{
+        font-size: 18px;
+        }
+    .mentorship-intro .heading ,.call-me .heading{
+        font-size: 32px;
+    }
+    .mentorship-intro .mentorship-detail ,.call-me .call-detail{
+        font-size: 15px;
+}
+}

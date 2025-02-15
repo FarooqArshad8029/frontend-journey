@@ -1,0 +1,1127 @@
+@font-face {
+    font-family: "Chillax";
+    src: url("../fonts/Chillax-Bold_0.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url("../fonts/Chillax-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url("../fonts/Chillax-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/PlusJakartaSans-Medium.ttf") format("opentype");
+    font-weight: 500;
+}
+
+body{
+    font-family: "chillax" "Plus Jakarta Sans" system-ui sans-serif ;
+    font-weight: 600;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+
+header{
+    background-color: #0B2715;
+    /* width: 100%; */
+    min-width: 100% !important;
+
+    height: 79px;
+    overflow: hidden;
+    border-bottom: 1px solid #34533f;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    padding: 30px;
+}
+.logo{
+    width: 207px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+ .logo .logo-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+ .logo .logo-link .mh{
+    font-family: "Chillax", sans-serif;
+    font-weight: bold; 
+    font-size: 29.89px;
+    justify-content: flex-start;
+    letter-spacing: -0.05em;
+}
+ .logo .logo-link .seprator{
+    width:0.5px; 
+    height: 12px; 
+    background-color: #F85E0D;
+}
+.logo .logo-link .last-name{
+    font-size: 17px;
+    letter-spacing: -0.05em;
+    line-height: 79%;
+    font-family: "Chillax", "Chillax Medium Placeholder", sans-serif;
+    font-weight: 500; 
+    width: 129px;
+    
+}
+header .navbar{
+    width: 550.4px;
+    height: min-content;
+    font-family: "Chillax", "Chillax Medium Placeholder", sans-serif;
+    font-weight: 500; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: -0.9px;
+}
+header .navbar > a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    line-height: 1.5px;
+    align-items: center;
+}
+header .navbar > a:last-child{
+    padding-left:6px ;
+}
+header .navbar > a:hover{
+    color: #4FC0BD;
+}
+header .navbar a > span {
+    font-size: 12px;
+    padding: 0px 10px;
+    background-color: azure;
+    border-radius: 15px;
+    color: black;
+    vertical-align: middle;
+    letter-spacing: 0.1px;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    height: 20px;
+    line-height: 20px;
+}
+header .navbar a #s-2024 {
+    background-color:#174030 ;
+    color: #54C0BD;
+    font-size: 10px;
+    letter-spacing: 0.1px;
+}
+header .navbar a #coming-soon {
+    background-color: #4C5345;
+    color: #C5A49C; 
+    font-size: 10px;
+    letter-spacing: 0.1px;
+}
+header .navbar-btn{
+    width: 349px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    gap: 12px;
+}
+header .navbar-btn > button{
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid black;
+    outline: none;
+}
+header .navbar-btn > #get-mentorship{
+    background-color: #E45910;
+    overflow: hidden;
+    padding: 17.5px 20.5px;
+}
+header .navbar-btn #get-mentorship i >img{
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    display: none;
+}
+header .navbar-btn > #get-mentorship:hover {
+    background-color: #e18756fa; 
+}
+header .navbar-btn  #get-mentorship:hover #navbar-btn-pic {
+    display: inline-block;
+}
+header .navbar-btn > #get-in-touch{
+    background-color: #215F38;
+    padding: 17.5px 19.5px;
+}
+header .navbar-btn > #get-in-touch:hover{
+    background-color: #3ba361;
+}
+header .responsive-menu{
+    background-color: #0D2816;
+    color: white;
+    display: none;
+}
+
+
+/* main div */
+
+
+/* intro */
+.main {
+    height: min-content;
+    width: 100%;
+    background-color:#0B2715 ;
+    color: white;
+    font-size: 1.6rem;
+    padding: 40px 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+    text-align: center;
+    gap: 40px;
+}
+.main  .intro .intro-highlight{
+    color: #D95610;
+}
+.main .intro >h1{
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    letter-spacing: -3px;
+    line-height: 110%;
+    font-size: 65px;
+}
+.main  .intro #des{
+    color: #ABB1AD;
+    margin: 16px 0 ;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 160%;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+}
+/* common form  */
+ form{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+    margin: 0px auto ;
+    height: 70px;
+    /* commen tbelow line to meet reponsiveness */
+    width: 650px;
+    /* max-width: 650px; */
+    
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+}
+ form  .submit-email {
+    font-size: 18px;
+    outline: none;
+    /* commen tbelow line to meet reponsiveness */
+    width: 452.15px;
+    /* width: 69.5%; */
+    /* max-width: 452.15px; */
+
+    border-radius: 35px;
+    background-color: #2B4534;
+    color: white;
+    line-height: 1em;
+    padding: 26px 30px;
+    border: 1px solid #1e2a22;
+    box-shadow: rgb(76, 176, 171) 0px 0px 0px 0px inset, rgb(72, 97, 80) 0px 0px 0px 1px inset;
+}
+form  .submit-email::placeholder {
+    color:#D1E0EB;
+}
+form  .submit-email-btn {
+    border: none;
+    outline: none;
+    border-radius: 35px;
+    font-size: 18px;
+    line-height: 1em;
+    background-color: #D95610;
+    padding: 15px 30px;
+    color: white;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+}
+/* common fans line*/
+ .fans{
+    font-size: 19px;
+    padding: 2px;
+    /* here */
+    /* width:max-content; */
+    margin: 0px auto;
+    display: flex;
+    place-content: center flex-start;
+    align-items: center;
+    flex-wrap: wrap;  
+    gap: 18px;
+}
+.fans2nd{
+    margin-left: -5px;
+    margin: 21.5px 0px;
+    gap: 12px;
+}
+ .fans .fan-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+ .fans .fan-images >img{
+    width:36px;
+    height: 36px;
+    margin: -2px;
+    object-fit:cover;
+    object-position: center top; 
+    border-radius: 20px;
+    background-color: #c7bfbf;
+}
+ .fans  .fan-des{
+    /* flex: 0 0 auto; */
+    /* white-space: nowrap; */
+}
+.fans .fan-des > p{
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    color: #ACB2AE;
+    font-size: 18px;
+}
+
+
+/* media */
+
+
+.main .media {
+    height: 665px;
+    /* uncomment this to make media div responsive */
+    /* max-width: 100%; */
+    width: 1305px;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+}
+.main .media  .media-detail{
+    width: 100%;
+    position: absolute;
+    left: -21px;
+    top: 35px;
+}
+.main .media  .media-detail >img{
+    width: 100%;
+    height: auto;
+    object-fit:cover ;
+}
+.main .media .media-detail > video {
+    position: absolute;
+    top: -4px;
+    left: 30.3%;
+    width: 38%;
+    height:90%;
+    object-fit: cover;
+    border-radius: 29px;
+}
+
+
+/* partner */
+
+
+.partner{
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+}
+.partner >p {
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 120%;
+}
+.partner >ul{
+    display: block;
+    margin-top: 50px;
+    white-space: nowrap;
+    line-height: 110%;
+    overflow: hidden;
+}
+.partner ul >li{
+    list-style-type: none;
+    display: inline-block;
+    margin:15px;
+}
+.partner .partner-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+}
+.partner .partner-images >img{
+    width: 100%;
+    object-fit: cover;
+}
+.partner #view-partners{
+    background-color: #215F38;
+    font-size: 18px;
+    padding: 18px 34px;
+    margin-top: 65px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+}
+.partner #view-partners:hover{
+    background-color: #2f854f;
+}
+
+
+/* Profile */
+
+
+.profile {
+    padding: 21px 0px 26px 0px ;
+    background-color: #F1F7F3;
+    text-align: center;
+    border-bottom: 1px solid rgb(25, 44, 25);
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+}
+.profile #name {
+    color: #0B2715;
+    font-size: 95px;
+    letter-spacing: -8px; 
+    color: #173220;
+}
+.profile .points {
+    width: 100%;
+}
+.profile .points > #podcaster {
+    color: #F86619;
+    border-color: #F86619;
+}
+.profile .points > span {
+    display: inline-block;
+    border: 3px solid rgb(25, 44, 25);
+    padding: 3px 27px 4px 27px;
+    margin: 6px;
+    color:#0B2715;
+    border-radius: 30px;
+    font-family: "Chillax", "Chillax Medium Placeholder", sans-serif;
+    font-weight: 500; 
+    font-size: 26px;
+    letter-spacing: -2px;
+}
+.profile .description{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px auto 10px auto;
+}
+.profile .description .bio {
+    width: 60%; 
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 4px;
+    gap: 30px;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+}
+.profile .description .bio > #quote-mark {
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    font-size: 151.28px;
+    letter-spacing: -5.28px;
+    height: 74px;
+    width: 101px;
+    line-height: 0.8;
+    position: relative;
+    top: 25px;
+    left: 12px;
+    color: #F86619;
+    text-align: left;
+}
+.profile .description .bio > .p1 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 160%;
+    text-align: left;
+}
+.profile .description .bio > .p2 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 160%;
+    text-align: left;
+}
+.profile .description .profile-pic {
+    width: 40%; 
+    padding: 25px;
+}
+.profile .description .profile-pic img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.profile .description .bio .explore{
+    text-align: left;
+}
+.profile .description .bio .explore #explore-btn {
+    background-color: #F86619;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 18px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+}
+.profile .description .bio .explore #explore-btn:hover {
+    background-color: #f5874b;
+}
+
+
+/* History */
+
+
+.history{
+    background-color: #F1F7F3;
+    color: #0B2715;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: min-content;
+    gap: 130px;
+    position: relative; 
+}
+.history::before {
+    content: "";
+    position: absolute;
+    width: 1.1px;
+    height: 100%; 
+    background-color: #0B2715;
+    left: 59.2%; 
+}
+.history .model{
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    width: 247px;
+    padding: 46px 0px 55px 0px ;
+    margin-bottom: 46px;
+    word-spacing: -2px;
+    letter-spacing: -0.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    left: -32px;
+}
+.history .model1 > .value{
+    position: relative;
+    left: -8px;
+}
+.history .model3{
+    position: relative;
+    top: 20px;
+}
+  .history-separator {
+    width: 2px; 
+    height: 300px;
+    background-color:#0B2715;
+}
+.history .model .value{
+    font-size: 80px;
+    font-family: "Chillax Semibold", "Chillax Semibold Placeholder", sans-serif;
+    letter-spacing: -5.28px;
+    line-height: 110%;
+}
+.history .model .value-des{
+    font-size: 36px;
+    letter-spacing: -2px;
+    line-height: 110%;
+    text-align: center;
+}
+
+
+/* TBT */
+
+
+.tbt{
+    padding: 72px 50px 50px 50px ;
+    background-color: #0B2715;
+    color: white;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+}
+.tbt >.connection{
+    display: inline-block;
+    width: 60%;
+    padding: 49px 0px 10px 32px;
+}
+.tbt .connection .line p {
+    margin: 16px 0px;
+    font-size: 50px;
+    letter-spacing: -3px;
+    line-height: 120%; 
+}
+.tbt .connection .line p >span {
+    color: #D9D6A1;
+}
+.tbt >.connection-des{
+    display: inline-block;
+    width: 39%;
+    margin-left: -10px;
+    position: relative;
+    top: -42px;
+}
+.tbt >.connection-des >p{
+    color: #728077;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 20px 0px;
+    color: #A9AEAA;
+}
+.tbt >.connection-des >button {
+    margin-top: 5px;
+    background-color: #f5661f;
+    color: white;
+    padding: 16px 31px 20px 31px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    font-size: 18px;
+    position: relative;
+    top: 13px;
+}
+.tbt >.connection-des >button:hover {
+    background-color: #ed773d;
+}
+
+
+/* podcasts */
+
+
+.podcasts{
+    margin-bottom: -21px;
+}
+.podcasts >.podcast1 >img,.podcasts >.podcast2 >img{
+    width: 100%;
+    object-fit: cover;
+    padding: 15px 0px 5px 0px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+    height: 280px;
+}
+
+
+/* course nad consultation */
+
+
+.register{
+    background-color: #F1F7F3;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    color: #0B2715;
+    padding: 120px 60px 107px 60px;
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: min-content;
+}
+.register .course{
+    display: inline-block;
+    width: 46%;
+    padding: 0px 6px 0px 32px;
+}
+.register .course .heading{
+    background-color: transparent;
+    color: #F76417;
+    border: 3px solid #F76417;
+    border-radius: 30px;
+    outline: none;
+    width: max-content;
+    letter-spacing: -1px;
+    font-size: 26px;
+    padding: 3px 26px;
+}
+.register .course .course-name{
+    color: #173220;
+    font-size: 50px;
+    line-height: 110%;
+    margin: 20px 0px;
+    letter-spacing: -2px;
+    letter-spacing: -3px;
+}
+.register .course .course-detail{
+    color: #536258;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 500;
+}
+.register .course form {
+    margin: 20px 0px; 
+    width: 100%;
+}
+.register .course form .form-input{
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    border: 1px solid #9da49f;
+    min-width: 296px ;
+    width: 70%;
+}
+.register .course .social-media{
+    font-size: 24px;
+    padding: 15px 0px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+.register .course .social-media-icons{
+    margin: 13px 0px;
+}
+.register .course .social-media-icons  > a{
+    text-decoration: none;
+    color: #0B2715;
+    font-size: 35px;
+    margin: 10px 27px;
+}   
+.register .course .social-media-icons  a > i{
+    max-width: 32px;
+    max-height: 32px;
+}
+.register .course .social-media-icons > a:first-child{
+    margin-left: 0 ;
+}
+
+
+/* Consultations & Mentorships */
+
+
+.register .consult {
+    display: inline-block;
+    width: 47%;
+    padding:0px  6px;
+}
+.register .consult .heading{
+    background-color: transparent;
+    color: rgb(17, 30, 17);
+    border: 3px solid rgb(17, 30, 17);
+    border-radius: 30px;
+    outline: none;
+    width: max-content;
+    letter-spacing: -1px;
+    font-size: 26px;
+    padding: 4px 25px;
+}
+.register .consult .mentorship {
+    width: 80%;
+    margin-top: 30px  ;
+}
+.register .consult .mentorship .mentor{
+    display: inline-block;
+    width: 270px;
+    font-size: 50px;
+    line-height: 110%;
+    letter-spacing: -3px;
+    margin: 2px 0px 37px 0px;
+    text-align: left;
+}
+.register .consult .mentorship  .mentor-pic{
+    display: inline-block;
+    border-radius: 50px;
+    width: 69px;
+    height: auto;    
+    vertical-align: super;
+    margin-left: 6px;
+}
+.register .consult .mentor-detail ,.register .consult .mentor-detail2 {
+    color: #536258;
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    margin-bottom :34px;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 160%;
+    font-weight: 500;
+}
+.register .consult .mentor-detail2 {
+    margin-bottom :22px;
+}
+.register .consult > button{
+    background-color:rgb(12, 32, 12);
+    color: white;
+    padding: 17px 32px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    font-size: 18px;
+}
+.register .consult > button:hover{
+    background-color:rgb(16, 77, 16);
+}
+
+
+/* footer */
+
+
+footer {
+    background-image: url(../images/footer-background-wallpaper.avif);
+    color: white;
+    font-family: "Chillax", "Chillax Semibold Placeholder", sans-serif;
+    font-weight: 600; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: min-content;
+    width: 100%;
+    position: relative;
+}
+footer .back-pic{
+    width: 90%;
+    height: 145px;
+    overflow: hidden;
+    position: absolute;
+    left: 4.5%;
+    top: 0;
+    z-index: 1;
+}
+footer .back-pic > img{
+    width: 100%;
+    height: 100%;
+    object-position: center bottom;
+    object-fit: cover;
+}
+footer .letter{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 200px;
+}
+footer .letter .head  .letter-headline{
+    font-size: 64px;
+    letter-spacing: -3px;
+    line-height: 110%;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -11px;
+}
+footer .letter .head  .letter-hedline-des{
+    font-family: "Plus Jakarta Sans";
+    color: #8b9c91;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    line-height: 160%;
+    margin-top: 4px;
+    text-align: center;
+}
+footer .copyright{
+    width: 100%;
+}
+footer .copyright .backup-links {
+    width: 100%;
+    padding: 94px 0px 40px 60px;
+}
+footer .copyright .backup-links .logo{
+    width: 20%;
+    text-align: left;
+    position: relative;
+    bottom: -5px;
+    left: -8px;
+}
+footer .copyright .backup-links .footer-links{
+    width: 80%;
+    text-align: right;
+    line-height: 21px;
+    position: relative;
+    right: 16px;
+    bottom: -1px;
+}
+footer .copyright .backup-links .footer-links,footer .copyright .backup-links .logo{
+    display: inline-block;
+}
+footer .copyright .backup-links .footer-links > a{ 
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: .99rem;
+    margin: 0px 24px;
+    font-weight: 500;
+    text-align: right;
+}
+footer .copyright .backup-links .footer-links > a:hover{
+    color: rgb(241, 115, 12);
+    text-decoration: underline;
+}
+footer .copyright div.footer-seprator{
+    width: 90%;
+    height: .5px;
+    border-bottom: .5px solid whitesmoke;
+    margin: 0px auto 30px auto;
+    position: relative;
+    left: -10px;
+}
+footer .copyright .copyerite-des{
+    padding: 8px 25px 15px 53px;
+    margin-bottom: 80px;
+}
+footer .copyright .copyerite-des .description, footer .copyright .copyerite-des .social-media-icons  {
+    display: inline-block;
+}
+
+footer .copyright .copyerite-des .description{
+    width: 59%;
+    text-align: left;
+}
+footer .copyright .copyerite-des .social-media-icons  {
+    width: 35%;
+    text-align: right;
+    vertical-align: top;
+    position: relative;
+    bottom: -7px;
+    left: 37px;
+}
+footer .copyright .copyerite-des .description > p{
+    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    line-height: 30px;  
+}
+footer .copyright .social-media-icons >a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 15px ;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+/* Media Queries */
+/* Media Queries */
+/* Media Queries */
+
+
+@media screen and (max-width:1200px){
+
+    header .navbar , header .navbar-btn{
+        display: none;
+    }
+    header .responsive-menu{
+        display: block;
+    }
+    .register{
+        flex-direction: column;
+    }
+     .register .course , .register .consult{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .history{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .history .model{
+        gap: 5px;
+        margin-bottom: 0px;
+        white-space: nowrap;
+        position: static;
+    }
+    .history::before {
+        display: none;
+    }
+ 
+    .tbt >.connection , .tbt >.connection-des{
+        display: block;
+        width: 100%;
+        padding: 49px 0px 10px 32px;
+    }
+}
+
+@media screen and (max-width:810px){
+    .profile #name{
+        font-size: 49px;
+        letter-spacing: -3px;
+        text-align: left;
+        margin-left: 5%;
+    }
+    .profile .description{
+        flex-direction: column;
+    }
+
+        .profile .description .bio {
+            width: 100%;
+    }
+    .profile .points > span {
+        display: block;
+        width: max-content;
+        margin:  0px 0px 15px 35px ;
+    }
+    footer .letter .backup-links .footer-links,footer .letter .backup-links .logo{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    footer .letter .backup-links .logo{
+        margin: 20px 0px;
+    }
+    footer .letter .backup-links .footer-links > a{ 
+        display: block;
+        width: 100%;
+        margin: 10px 5px;;
+    }
+    footer .copyright .description, footer .copyright .social-media-icons  {
+        display: block;
+        width: 80%;
+        text-align: center  ;
+        padding: 10px;
+    }
+    }
+
+@media screen and (max-width:750px){
+    .main .intro > h1{
+        font-size: 38px;
+    }
+    .main  .intro #des{
+        font-size: 18px;
+    }
+    .partner ul >li{
+        font-size: 1.1rem;
+        margin: 5px;
+    }
+    .partner >h3 {
+        font-size: 1.3rem;
+    }
+    .history .model .value{
+        font-size: 48px;
+    }
+    .history .model .value-des{
+        font-size: 26px;
+    }
+    footer .letter .head .letter-headline {
+        font-size: 55px;
+    }
+    footer .copyright .backup-links {
+        text-align: center;
+    }
+    footer .copyright .backup-links .footer-links > a{ 
+        display: block;
+        margin:5px 0px;
+        text-align: center;
+    }
+
+
+    footer .copyright .copyerite-des .description, footer .copyright .copyerite-des .social-media-icons  {
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: static;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+     form{
+        /* width: 350px; */
+        width: 80%;
+        margin: 0px auto;
+        /* justify-content: center; */
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+        
+    }
+     form  .submit-email{
+        width: 80%;
+    }
+     .fans{
+        flex-direction: column;
+    }
+    .partner >p {
+        font-size: 26px;
+    }
+      .submit-email-btn{
+        width: 80%;
+        margin-top: 10px;
+    }
+    footer .letter .head .letter-headline {
+        font-size: 50px;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .profile #name {
+        font-size: 1.8rem;
+    }
+    .profile .points > span {
+        font-size: 0.9rem;
+        padding: 3px 6px;
+    }
+    .profile .description .bio > .p1, .profile .description .bio > .p2 {
+        font-size: 0.9rem;
+    }
+    .profile #explore {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    footer .letter .head .letter-headline {
+        font-size: 40px;
+    }
+}
+
