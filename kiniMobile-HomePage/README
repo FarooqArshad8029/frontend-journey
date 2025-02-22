@@ -1,0 +1,60 @@
+This repository contains two mobile website projects built for practicing HTML and CSS. Both projects are designed to create a responsive mobile website, but each uses a different approach for styling:
+
+Project 1: Styled with Vanilla CSS
+
+Project 2: Styled with Tailwind CSS
+
+Both projects are designed to help you understand the differences between writing custom CSS and using a utility-first CSS framework like Tailwind.
+Project Descriptions
+Project 1: Mobile Website with Vanilla CSS
+This project is a mobile-responsive website built using HTML and CSS. The focus is on writing custom CSS to style the website from scratch. It includes:
+
+A responsive layout for mobile devices.
+
+Custom CSS for styling components like buttons, navigation, and cards.
+
+Media queries for responsiveness.
+
+Features:
+Responsive design for mobile screens.
+
+Custom CSS for styling.
+
+Basic HTML structure.
+
+Technologies Used:
+HTML
+
+CSS
+
+Project 2: Mobile Website with Tailwind CSS
+This project is a mobile-responsive website built using HTML and Tailwind CSS. The focus is on using Tailwind's utility classes to style the website quickly and efficiently. It includes:
+
+A responsive layout for mobile devices.
+
+Tailwind CSS classes for styling components.
+
+Predefined utility classes for responsiveness.
+
+Features:
+Responsive design for mobile screens.
+
+Tailwind CSS for styling.
+
+Basic HTML structure.
+
+Technologies Used:
+HTML
+
+Tailwind CSS
+ow to Run the Projects
+Prerequisites
+A modern web browser (e.g., Chrome, Firefox, Safari).
+
+A code editor (e.g., VS Code, Sublime Text).
+
+Steps to Run
+Clone the repository
+Navigate to the project folder
+Open the index.html file in your browser.
+
