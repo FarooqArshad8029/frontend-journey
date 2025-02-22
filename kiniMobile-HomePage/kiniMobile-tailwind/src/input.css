@@ -1,0 +1,63 @@
+/* If you're loading a font from a service like Google Fonts, make sure to put the @import at the very top of your CSS file */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+/* 
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/INTER-EXTRALIGHT.OTF) format('opentype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-Light.OTF) format('opentype'); 
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-Regular.OTF) format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-Medium.OTF) format('opentype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-SemiBold.OTF) format('opentype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-Bold.OTF) format('opentype');
+    font-weight: 700;
+} */
+
+@theme {
+  /* uncomment to overide very first respective utility over all
+
+    --font-* : initial; 
+    */
+
+  --font-primary-inter: "inter", "sans-serif";
+
+  --color-light-blue: #474ea0;
+  --color-dark-blue: #3a44b2;
+  --color-dark-pink: #fe175b;
+  --color-light-pink: #f35987;
+  --color-yellow: #ffcf00;
+  --color-light-gray: #979797;
+  --color-dark-gray: #424242;
+  --color-background-light-grey: #f3f4f6;
+  --color-border-light-pink: #ff768f;
+  --color-border-light-yellow: #ffcf00;
+  --color-border-light-green: #2bbd99;
+
+  
+    --seprator-height : 0.7px;
+    --word-spacing: -4px;
+    --standard-width:1290px;
+}
