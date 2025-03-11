@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resubscribe</title>
+        <link href="../../output.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240b0bf0d2.js" crossorigin="anonymous"></script>
+    </head>
+<body class="bg-bg-main-color font-primary-font text-white">
+        <!-- Header -->
+        <header class="bg-input-color">
+            <div class="max-w-[var(--standard-width)] mx-auto py-1 px-6 text-plain-text-color flex justify-between items-center gap-1">
+                <a href="../profile-screen-comment-tab.html" class="rounded-full flex justify-center items-center">
+                    <img src="../../assets/images/profilepic.png" width="70px" alt="Profile Pic" class="cursor-pointer">
+                </a>
+                <div class="txet-sm flex justify-center items-center bg-secondary-color rounded-lg px-2">
+                    <input type="text" class="w-full outline-none text-sm p-3  sm:min-w-xs" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                </div>
+            </div>
+        </header>
+           <!-- Navbar -->
+     <nav class="bg-primary-color text-white" >
+        <div class="max-w-[var(--standard-width)] mx-auto py-2 px-6 justify-between items-center hidden sm:flex ">
+            <div class="flex gap-5"> 
+                <a href="../subscription.html" class="hover:underline">
+                    Home
+                </a>
+                <a href="../profile-screen.html" class="hover:underline">
+                    Bookmarks
+                </a>
+                <a href="../latest-update.html" class="hover:underline">
+                    Comics
+                </a>
+                <a href="../all-notification.html" class="hover:underline">
+                    Notifications
+                </a>
+                <a href="../announcementList.html" class="hover:underline">
+                    Announcements
+                </a>
+                <a href="../chapter-list.html" class="hover:underline">
+                    chapters
+                </a>
+                <a href="../history.html" class="hover:underline">
+                    History
+                </a>
+                <a href="../signup.html" class="hover:underline">
+                    signup
+                </a>
+            </div>
+            <div>
+                <button type="button" class="bg-primary-dark-color py-1 px-3 mr-2 cursor-pointer hover:opacity-80 rounded-sm">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="../login.html">Login</a>
+                </button>
+            </div>
+        </div>
+     </nav>
+     <!-- Resubscribe Modal -->
+     <section class="bg-secondary-color text-center max-w-lg mx-auto text-white mt-8">
+        <div class="bg-input-color flex justify-between p-4 rounded-sm">
+            <h2 class="text-primary-color font-semibold">Resubscribe</h2>
+            <button type="button" class="hover:text-primary-color cursor-pointer text-2xl">X</button>
+        </div>
+        <p class="text-lg font-500  w-xs mx-auto my-7">Are you sure you want to reactivate your subscription?</p>
+        <div class="flex gap-3 p-3">
+            <button type="button" class="w-full bg-warning-color my-3 cursor-pointer p-2 rounded-lg hover:bg-warning-dark-color">Cancle</button>
+            <button type="button" class="w-full bg-primary-color my-3 cursor-pointer p-2 rounded-lg hover:opacity-80">confirm</button>
+        </div>
+     </section>
+
+    
+</body>
+</html>

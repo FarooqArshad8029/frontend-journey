@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <link href="../../output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/240b0bf0d2.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="bg-bg-main-color text-white">
+           <!-- Header -->
+           <header class="bg-primary-color">
+            <div class="max-w-[var(--standard-width)] mx-auto py-1 px-6 text-plain-text-color flex justify-between items-center gap-1">
+                <div class="flex justify-center items-center gap-8">    
+                    <a href="../profile-screen-comment-tab.html" class="rounded-full flex justify-center items-center">
+                        <img src="../../assets/images/profilepic.png" width="50px" alt="Profile Pic" class="cursor-pointer">
+                    </a>
+                    <nav class="gap-5 text-white hidden xs:flex"> 
+                        <a href="../subscription.html" class="hover:underline">
+                            Home
+                        </a>
+                        <a href="../profile-screen.html" class="hover:underline">
+                            Bookmarks
+                        </a>
+                        <a href="../latest-update.html" class="hover:underline">
+                            Comics
+                        </a>
+                        <a href="../all-notification.html" class="hover:underline">
+                            Notifications
+                        </a>
+                        <a href="../announcementList.html" class="hover:underline">
+                            Announcements
+                        </a>
+                        <a href="../chapter-list.html" class="hover:underline">
+                            chapters
+                        </a>
+                        <a href="../history.html" class="hover:underline">
+                            History
+                        </a>
+                        <a href="../signup.html" class="hover:underline">
+                            signup
+                        </a>
+                    </nav>
+                </div>
+                <div class="justify-center items-center gap-8 hidden lg:flex">
+                    <div class="txet-sm flex justify-center items-center bg-secondary-color rounded-lg px-2">
+                        <input type="text" class="w-full outline-none text-sm p-3  sm:min-w-xs" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                    </div>
+                    <a href="#">
+                        <i class="fa-regular fa-bell text-white text-2xl"></i>
+                    </a>
+                    <a href="../profile.html" class="cursor-pointer">
+                        <img src="../../assets/images/Avatar.png" width="50px" alt="Profile Pic" class="rounded-full">
+                    </a>
+                </div>
+            </div>
+        </header>
+           <!-- Notification Modal -->
+    <section class="bg-input-color max-w-[350px] mx-auto mt-4 p-4 rounded-lg">
+        <div class="flex justify-between items-end text-sm mb-4">
+            <span class="font-semibold">Notifications</span>
+            <span class="text-xs cursor-pointer">Mark all as read</span>
+        </div>
+        <div class="space-y-1">
+            <a href="#" class="flex gap-4 items-center group">
+                <div>
+                    <img src="../../assets/images/1.jpeg" alt="Notificatioon" class="w-15 object-cover group-hover:opacity-70 ">
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium group-hover:underline">Murim Login</h3>
+                    <p class="text-xs text-gray-400">Chapter 498</p>
+                    <p class="text-xs text-gray-400">3 Days Ago</p>
+                    <button type="button" class="text-xs bg-primary-color px-3 py-0.5 my-2 rounded-sm cursor-pointer hover:bg-primary-dark-color">Read</button>
+                </div>
+            </a>
+            <a href="#" class="flex gap-4 items-center group">
+                <div>
+                    <img src="../../assets/images/2.jpeg" alt="Notificatioon" class="w-15 object-cover group-hover:opacity-70 ">
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium group-hover:underline">Nano Machine</h3>
+                    <p class="text-xs text-gray-400">Chapter 498</p>
+                    <p class="text-xs text-gray-400">4 Days Ago</p>
+                    <button type="button" class="text-xs bg-primary-color px-3 py-0.5 my-2 rounded-sm cursor-pointer hover:bg-primary-dark-color">Read</button>
+                </div>
+            </a>
+            <a href="#" class="flex gap-4 items-center group">
+                <div>
+                    <img src="../../assets/images/3.jpeg" alt="Notificatioon" class="w-15 object-cover group-hover:opacity-70 ">
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium group-hover:underline">Standard of Reinceration Hero</h3>
+                    <p class="text-xs text-gray-400">Chapter 498</p>
+                    <p class="text-xs text-gray-400">4 Days Ago</p>
+                    <button type="button" class="text-xs bg-primary-color px-3 py-0.5 my-2 rounded-sm cursor-pointer hover:bg-primary-dark-color">Read</button>
+                </div>
+            </a>
+            <a href="#" class="flex gap-4 items-center group">
+                <div>
+                    <img src="../../assets/images/4.jpeg" alt="Notificatioon" class="w-15 object-cover group-hover:opacity-70 ">
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium group-hover:underline">Weapon Marker</h3>
+                    <p class="text-xs text-gray-400">Chapter 498</p>
+                    <p class="text-xs text-gray-400">4 Days Ago</p>
+                    <button type="button" class="text-xs bg-primary-color px-3 py-0.5 my-2 rounded-sm cursor-pointer hover:bg-primary-dark-color">Read</button>
+                </div>
+            </a>
+            
+
+        </div>
+        <div class="mt-4 border-t border-gray-700 pt-4">
+            <button type="button" class="text-sm w-full text-center cursor-pointer">View All</button>
+        </div>
+    </section>
+    
+</body>
+</html>

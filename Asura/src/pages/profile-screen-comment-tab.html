@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Screen Model</title>
+        <link href="../output.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/240b0bf0d2.js" crossorigin="anonymous"></script>
+    </head>
+<body class="font-primary-font bg-bg-main-color">
+          <!-- Header -->
+          <header class="bg-input-color">
+            <div class="max-w-[var(--standard-width)] mx-auto py-1 px-6 text-plain-text-color flex justify-between items-center gap-1">
+              <a href="./profile-screen-comment-tab.html" class="rounded-full flex justify-center items-center">
+                <img src="../assets/images/profilepic.png" width="50px" alt="Profile Pic" class="cursor-pointer">
+            </a>
+                <div class="txet-sm flex justify-center items-center bg-secondary-color rounded-lg px-2">
+                    <input type="text" class="w-full outline-none text-sm p-3  sm:min-w-xs" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                </div>
+            </div>
+        </header>
+                <!-- Navbar -->
+     <nav class="bg-primary-color text-white" >
+      <div class="max-w-[var(--standard-width)] mx-auto py-2 px-6 justify-between items-center hidden sm:flex ">
+          <div class="flex gap-5"> 
+            <a href="../subscription.html" class="hover:underline">
+              Home
+          </a>
+          <a href="./profile-screen.html" class="hover:underline">
+              Bookmarks
+          </a>
+          <a href="./latest-update.html" class="hover:underline">
+              Comics
+          </a>
+          <a href="./all-notification.html" class="hover:underline">
+              Notifications
+          </a>
+          <a href="./announcementList.html" class="hover:underline">
+              Announcements
+          </a>
+          <a href="./chapter-list.html" class="hover:underline">
+              chapters
+          </a>
+          <a href="./history.html" class="hover:underline">
+              History
+          </a>
+          <a href="./signup.html" class="hover:underline">
+              signup
+          </a>
+          </div>
+          <div>
+              <button type="button" class="bg-primary-dark-color py-1 px-3 mr-2 cursor-pointer hover:opacity-80 rounded-sm">
+                  <i class="fa-solid fa-user"></i>
+                  <a href="./login.html">Login</a>
+              </button>
+          </div>
+      </div>
+   </nav>
+    <!--Profile Screen -->
+    <section class="max-w-[var(--standard-width)] mx-auto p-6 flex lg:flex-row flex-col gap-8 text-white ">
+      <div>
+        <img src="../assets/images/Avatar.png" alt="Profile" class="cursor-pointer mx-auto h-full object-cover lg:w-sm  rounded-lg">
+      </div>
+      <div>
+        <div class="flex xs:flex-row flex-col gap-2 xs:gap-10">
+          <h2 class="text-2xl font-bold">Michelle jhon </h2>
+            <div>
+              <a href="./modal/followers-modal.html" class="px-5 py-1 rounded-md bg-primary-color mr-3 text-lg cursor-pointer hover:bg-primary-dark-color">Follow</a>
+              <a href="./modal/following-modal.html" class="px-5 py-1 rounded-md bg-primary-color text-lg cursor-pointer hover:bg-primary-dark-color">Add Friend</a>
+            </div>
+        </div>
+        <div class="flex xs:flex-row flex-col gap-2 xs:gap-15 my-6">
+          <span class="text-lg font-semibold">10.8k <span class="font-light">Followers</span> </span>
+          <span class="text-lg font-semibold">50 <span class="font-light">Followings</span> </span>
+          <span class="text-lg font-semibold">50 <span class="font-light">UpVotes</span> </span>
+        </div>
+      <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+     
+    </section>
+    <div class="p-6 text-white text-nowrap max-w-[var(--standard-width)] mx-auto">
+      <a href="./profile-screen.html" class="bg-input-color px-6 py-2 text-xl font-semibold hover:bg-primary-dark-color rounded-md cursor-pointer">Bookmarks</a>
+      <a href="./profile-screen-comment-tab.html"  class="bg-primary-color px-6 py-2 text-xl font-semibold hover:bg-primary-color rounded-md cursor-pointer">Comments</a>
+    </div>
+
+    <!-- Movies Comments -->
+    <section class="max-w-[var(--standard-width)] mx-auto p-6">
+      <!-- Commnet-1 -->
+      <div class="bg-input-color text-white p-3 rounded-md">
+        <h2 class="text-lg font-bold">Regressing with the king’s power chapter 35</h2>
+        <div class="flex items-center mt-3">
+            <img src="../assets/images/profilepic.png" alt="Profile" class="w-10 h-10 rounded-full">
+            <span class="ml-2 font-bold underline">karun</span>
+            <span class="text-gray-400 text-sm ml-2">• 10 Hours Ago</span>
+        </div>
+        <p class="text-gray-300 mt-3 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="mt-4 flex items-center text-gray-400 text-sm">
+            <button type="button" class="mr-2 hover:text-white cursor-pointer">↑</button>
+            <button type="button" class="mr-4 hover:text-white cursor-pointer">↓</button>
+            <button type="button" class="hover:text-white cursor-pointer">Reply</button>
+        </div>
+      </div>
+      <!-- Commnet-2 -->
+      <div class="bg-input-color text-white p-3 mt-4 rounded-md">
+        <h2 class="text-lg font-bold">Regressing with the king’s power chapter 35</h2>
+        <div class="flex items-center mt-3">
+            <img src="../assets/images/profilepic.png" alt="Profile" class="w-10 h-10 rounded-full">
+            <span class="ml-2 font-bold underline">karun</span>
+            <span class="text-gray-400 text-sm ml-2">• 10 Hours Ago</span>
+        </div>
+        <p class="text-gray-300 mt-3 text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="mt-4 flex items-center text-gray-400 text-sm">
+            <button type="button" class="mr-2 hover:text-white cursor-pointer">↑</button>
+            <button type="button" class="mr-4 hover:text-white cursor-pointer">↓</button>
+            <button type="button"class="hover:text-white cursor-pointer">Reply</button>
+        </div>
+      </div>
+    </section>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/240b0bf0d2.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-bg-main-color font-primary-font text-white">
+     <!-- Header -->
+    <header class="bg-input-color">
+        <div class="max-w-[var(--standard-width)] mx-auto py-1 px-6 text-plain-text-color flex justify-between items-center gap-1">
+            <a href="./profile-screen-comment-tab.html" class="rounded-full flex justify-center items-center">
+                <img src="../assets/images/profilepic.png" width="70px" alt="Profile Pic" class="cursor-pointer">
+            </a>
+            <div class="txet-sm flex justify-center items-center bg-secondary-color rounded-lg px-2">
+                <input type="text" class="w-full outline-none text-sm p-3  sm:min-w-xs" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar -->
+     <nav class="bg-primary-color" >
+        <div class="max-w-[var(--standard-width)] mx-auto py-2 px-6 justify-between items-center hidden sm:flex ">
+            <div class="flex gap-5"> 
+                <a href="../subscription.html" class="hover:underline">
+                    Home
+                </a>
+                <a href="./profile-screen.html" class="hover:underline">
+                    Bookmarks
+                </a>
+                <a href="./latest-update.html" class="hover:underline">
+                    Comics
+                </a>
+                <a href="./all-notification.html" class="hover:underline">
+                    Notifications
+                </a>
+                <a href="./announcementList.html" class="hover:underline">
+                    Announcements
+                </a>
+                <a href="./chapter-list.html" class="hover:underline">
+                    chapters
+                </a>
+                <a href="./history.html" class="hover:underline">
+                    History
+                </a>
+                <a href="./signup.html" class="hover:underline">
+                    signup
+                </a>
+            </div>
+            <div>
+                <button  type="button" class="bg-primary-dark-color py-1 px-3 mr-2 cursor-pointer hover:opacity-80">
+                    <i class="fa-solid fa-circle-up"></i>
+                    <span>Upgrade</span>
+                </button>
+                <button type="button" class="bg-primary-dark-color py-1 px-3 mr-2 cursor-pointer hover:opacity-80">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="./login.html">LogOut</a>
+                </button>
+            </div>
+        </div>
+     </nav>
+     <!-- min div -->
+     <div class="max-w-[var(--standard-width)] mx-auto p-3 sm:p-5">
+        <!-- Profile - Section:1 -->
+        <section class="bg-secondary-color w-full text-left p-3 sm:p-5 pb-10 my-5 rounded-lg">
+            <div class=" flex flex-col gap-3 justify-start items-center sm:flex-row">
+                <div class="rounded-md flex justify-center items-center">
+                    <img src="../assets/images/Avatar.png" width="170px" alt="Profile Pic">
+                </div>
+                <div>
+                    <div class="my-3">
+                        <button type="button" class="bg-primary-color py-1 px-2 mr-2 cursor-pointer rounded-lg hover:bg-primary-dark-color">
+                            CHANGE PHOTO
+                        </button>
+                        <button type="button" class="bg-warning-color py-1 px-2 cursor-pointer rounded-lg hover:bg-warning-dark-color">
+                            DELETE PHOTO
+                        </button>
+                    </div>
+                    <p>Allowed JPG, or PNG .Max size of 800k</p>
+                </div>
+            </div>
+            <div class="bg-input-color w-full sm:w-md text-left px-6 my-3 rounded-lg whitespace-nowrap">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" class="sm:w-xs outline-none text-sm p-3 " value="johnDoe" disabled>
+            </div>
+            <textarea name="profile-bio" id="profile-bio" class="h-30 bg-input-color w-full text-white rounded-lg" placeholder="Enter Description">
+            </textarea>
+            <button type="button" class="bg-primary-color px-3 py-1 rounded-lg my-3 hover:bg-primary-dark-color ">SAVE CHNAGES</button>
+        </section>
+        <!-- Change password - Section:2 -->
+        <section class="bg-secondary-color text-left p-5 pb-10 my-5 rounded-lg">
+            <h2 class="text-xl font-medium my-3">Change Password</h2>
+            <div class="bg-input-color sm:w-md text-left px-6 my-3 rounded-lg text-sm flex justify-between items-center">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="w-full outline-none p-3" placeholder="Enter Current Password">
+                <i class="fa-solid fa-eye-slash text-plain-text-color text-xs cursor-pointer"></i>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <div class="bg-input-color sm:w-md text-left px-6 my-3 rounded-lg flex justify-between items-center">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="w-full outline-none p-3" placeholder="Enter New Password">
+                    <i class="fa-solid fa-eye-slash text-plain-text-color text-xs cursor-pointer"></i>
+                </div>
+                <div class="bg-input-color sm:w-md text-left px-6 my-3 rounded-lg flex justify-between items-center">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="w-full outline-none p-3" placeholder="Confirm New Password">
+                    <i class="fa-solid fa-eye-slash text-plain-text-color text-xs cursor-pointer"></i>
+                </div>
+            </div>
+            <div>
+                <h2 class="font-medium text-xl">Password requirements:</h2>
+                <ul class="text-sm font-light list-disc list-inside ">
+                    <li>Minimum 8 characters long - the more, the better</li>
+                    <li>At least one lowercase character</li>
+                    <li>At least one number, symbol, or whitespace character</li>
+                </ul>
+            </div>
+            <button type="button" class="bg-primary-color px-3 py-1 rounded-lg my-3 hover:bg-primary-dark-color">SAVE CHNAGES</button>
+        </section>
+        <!-- Cancle Subscription -->
+        <section class="bg-secondary-color p-5 my-5 text-sm rounded-lg flex justify-between flex-col sm:flex-row items-center gap-3">
+            <div>
+                <h2 class="font-semibold text-xl">Cancle Subscription</h2>
+                <p class="text-plain-text-color">Please note that after canceling, you will no longer have access to premium features.</p>
+            </div>
+            <button type="button" class="bg-warning-color px-3 w-full sm:w-45 py-2 cursor-pointer rounded-lg hover:bg-warning-dark-color">CANCLE SUBSCRIPTION</button>
+        
+        </section>
+     </div>
+
+   
+
+
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter List</title>
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/240b0bf0d2.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-bg-main-color font-primary-font text-white">
+      <!-- Header -->
+      <header class="bg-primary-color">
+        <div class="max-w-[var(--standard-width)] mx-auto py-1 px-6 text-plain-text-color flex justify-between items-center gap-1">
+            <div class="flex justify-center items-center gap-8">    
+                <a href="./profile-screen-comment-tab.html" class="rounded-full flex justify-center items-center">
+                    <img src="../assets/images/profilepic.png" width="50px" alt="Profile Pic" class="cursor-pointer">
+                </a>
+                <nav class="gap-5 text-white hidden xs:flex"> 
+                    <a href="../subscription.html" class="hover:underline">
+                        Home
+                    </a>
+                    <a href="./profile-screen.html" class="hover:underline">
+                        Bookmarks
+                    </a>
+                    <a href="./latest-update.html" class="hover:underline">
+                        Comics
+                    </a>
+                    <a href="./all-notification.html" class="hover:underline">
+                        Notifications
+                    </a>
+                    <a href="./announcementList.html" class="hover:underline">
+                        Announcements
+                    </a>
+                    <a href="./chapter-list.html" class="hover:underline">
+                        chapters
+                    </a>
+                    <a href="./history.html" class="hover:underline">
+                        History
+                    </a>
+                    <a href="./signup.html" class="hover:underline">
+                        signup
+                    </a>
+                </nav>
+            </div>
+            <div class="justify-center items-center gap-8 hidden lg:flex">
+                <div class="txet-sm flex justify-center items-center bg-secondary-color rounded-lg px-2">
+                    <input type="text" class="w-full outline-none text-sm p-3  sm:min-w-xs" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                </div>
+                <a href="../pages/profile.html">
+                    <img src="../assets/images/Avatar.png" width="50px" alt="Profile Pic" class="rounded-full cursor-pointer">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="my-3 p-6 max-w-[var(--standard-width)] mx-auto">
+        <button type="button" class="px-6 py-2 bg-primary-color text-white rounded-md cursor-pointer hover:bg-primary-dark-color"> Chapter List </button>
+        <button type="button" class="px-9 py-2 bg-input-color text-white rounded-md cursor-pointer hover:bg-gray-700"> Notices </button>
+    </div>
+    <!--  Chapter List Page-->
+    <section class="max-w-[var(--standard-width)] mx-auto p-5 flex gap-4 flex-col lg:flex-row">
+        <!--  Chapter List Column-1-->
+        <section class="bg-secondary-color rounded-md w-full lg:w-5/7">
+            <div class="p-3 border-b border-gray-700">
+                <h2 class="font-semibold text-xl">Chapter I Killed an Academy Player</h2>
+            </div>
+            <div class="p-3 flex flex-col xs:flex-row justify-center items-center gap-3">
+                <button type="button" class="w-full xs:w-1/2 px-6 py-2 bg-primary-color text-white rounded-sm cursor-pointer hover:bg-primary-dark-color">
+                    <h4>First Chapter</h4>
+                    <h4 class="font-semibold text-xl">Chapter 1</h4>
+               </button>
+               <button type="button" class="w-full xs:w-1/2 px-6 py-2 bg-primary-color text-white rounded-sm cursor-pointer hover:bg-primary-dark-color">
+                <h4>New Chapter</h4>
+                <h4 class="font-semibold text-xl">Chapter 46</h4>
+               </button>
+            </div>
+            <div class="m-2 ">
+              <input type="serach" placeholder="Search Chapter, Example : 25 or 178" class="bg-input-color p-2 w-full outline-none rounded-sm">
+            </div>
+            <!-- Chapter -->
+            <div class="p-3 mb-10 mt-5">
+                <div class="border border-gray-700 p-2 rounded-lg border-l-9 border-l-primary-color">
+                    <h5 class="text-primary-color font-bold text-xl">Chapter 28</h5>
+                    <h5 class="text-plain-text-color text-xs font-semibold  ">April 20th 2024</h5>
+                </div>
+                <div class="border border-gray-700 p-2 rounded-lg text-plain-text-color mt-2">
+                    <h5 class="text-white font-bold text-xl">Chapter 28</h5>
+                    <h5 class="text-xs font-semibold">April 20th 2024</h5>
+                </div>
+                <div class="border border-gray-700 p-2 rounded-lg text-plain-text-color mt-2">
+                    <h5 class="text-white font-bold text-xl">Chapter 28</h5>
+                    <h5 class="text-xs font-semibold">April 20th 2024</h5>
+                </div>
+                <div class="border border-gray-700 p-2 rounded-lg text-plain-text-color mt-2">
+                    <h5 class="text-white font-bold text-xl">Chapter 28</h5>
+                    <h5 class="text-xs font-semibold">April 20th 2024</h5>
+                </div>
+                <div class="border border-gray-700 p-2 rounded-lg text-plain-text-color mt-2">
+                    <h5 class="text-white font-bold text-xl">Chapter 28</h5>
+                    <h5 class="text-xs font-semibold">April 20th 2024</h5>
+                </div>
+            </div>
+        </section>
+
+        <!--  Popular List Column-2-->
+        <section class=" bg-secondary-color w-full lg:w-2/5 p-3">
+            <div class="bg-input-color p-2 flex justify-between items-center">
+                <span class="bg-primary-color px-3 rounded-sm cursor-pointer">Weekly</span>
+                <span class="cursor-pointer">Monthly</span>
+                <span class="cursor-pointer">All</span>
+            </div>
+            <div>
+                <!-- Movie-1 -->
+                <a class="flex items-center gap-4 py-5 cursor-pointer group border-b border-gray-50">
+                    <div>
+                        <span class="px-2 py-1 border border-plain-text-color rounded-sm text-plain-text-color">1</span>
+                    </div>
+                    <div>
+                        <img src="../assets/images/A.png" width="100px" alt="movie-first" class="rounded-sm group-hover:opacity-70">
+                    </div>
+                    <div class="w-full">
+                        <h4 class="text-sm font-semibold group-hover:underline">The Regressed Mercenany Mach...</h4>
+                        <p class="text-sm py-1"><span class="text-plain-text-color">Generes:</span>Action, Adventure, Fantasy,</p>
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="text-yellow-400 ">
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                            </div>
+                            <span>9.5</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Movie-2 -->
+                <a class="flex items-center gap-4 py-5 cursor-pointer group border-b border-gray-50">
+                    <div>
+                        <span class="px-2 py-1 border border-plain-text-color rounded-sm text-plain-text-color">2</span>
+                    </div>
+                    <div>
+                        <img src="../assets/images/B.png" width="100px" alt="movie-first" class="rounded-sm group-hover:opacity-70">
+                    </div>
+                    <div class="w-full">
+                        <h4 class="text-sm font-semibold group-hover:underline">The Regressed Mercenany Mach...</h4>
+                        <p class="text-sm py-1"><span class="text-plain-text-color">Generes:</span>Action, Adventure, Fantasy,</p>
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="text-yellow-400 ">
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                            </div>
+                            <span>9.5</span>
+                        </div>
+                    </div>
+                </a>
+                    <!-- Movie-3 -->
+                    <a class="flex items-center gap-4 py-5 cursor-pointer group border-b border-gray-50">
+                    <div>
+                        <span class="px-2 py-1 border border-plain-text-color rounded-sm text-plain-text-color">3</span>
+                    </div>
+                    <div>
+                        <img src="../assets/images/C.png" width="100px" alt="movie-first" class="rounded-sm group-hover:opacity-70">
+                    </div>
+                    <div class="w-full">
+                        <h4 class="text-sm font-semibold group-hover:underline">The Regressed Mercenany Mach...</h4>
+                        <p class="text-sm py-1"><span class="text-plain-text-color">Generes:</span>Action, Adventure, Fantasy,</p>
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="text-yellow-400 ">
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                            </div>
+                            <span>9.5</span>
+                        </div>
+                    </div>
+                </a>
+                    <!-- Movie-4 -->
+                    <a class="flex items-center gap-4 py-5 cursor-pointer group border-b border-gray-50">
+                    <div>
+                        <span class="px-2 py-1 border border-plain-text-color rounded-sm text-plain-text-color">4</span>
+                    </div>
+                    <div>
+                        <img src="../assets/images/D.png" width="100px" alt="movie-first" class="rounded-sm group-hover:opacity-70">
+                    </div>
+                    <div class="w-full">
+                        <h4 class="text-sm font-semibold group-hover:underline">The Regressed Mercenany Mach...</h4>
+                        <p class="text-sm py-1"><span class="text-plain-text-color">Generes:</span>Action, Adventure, Fantasy,</p>
+                        <div class="flex items-center gap-2 text-xs">
+                            <div class="text-yellow-400 ">
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                                <i class="fa-regular fa-star cursor-pointer"></i>
+                            </div>
+                            <span>9.5</span>
+                        </div>
+                    </div>
+                </a>
+                        <!-- Movie-5 -->
+                        <a class="flex items-center gap-4 py-5 cursor-pointer group">
+                            <div>
+                                <span class="px-2 py-1 border border-plain-text-color rounded-sm text-plain-text-color">4</span>
+                            </div>
+                            <div>
+                                <img src="../assets/images/E.png" width="100px" alt="movie-first" class="rounded-sm group-hover:opacity-70">
+                            </div>
+                            <div class="w-full">
+                                <h4 class="text-sm font-semibold group-hover:underline">The Regressed Mercenany Mach...</h4>
+                                <p class="text-sm py-1"><span class="text-plain-text-color">Generes:</span>Action, Adventure, Fantasy,</p>
+                                <div class="flex items-center gap-2 text-xs">
+                                    <div class="text-yellow-400 ">
+                                        <i class="fa-regular fa-star cursor-pointer"></i>
+                                        <i class="fa-regular fa-star cursor-pointer"></i>
+                                        <i class="fa-regular fa-star cursor-pointer"></i>
+                                        <i class="fa-regular fa-star cursor-pointer"></i>
+                                        <i class="fa-regular fa-star cursor-pointer"></i>
+                                    </div>
+                                    <span>9.5</span>
+                                </div>
+                            </div>
+                        </a>
+            </div>
+        </section>
+
+    </section>
+
+    
+</body>
+</html>
